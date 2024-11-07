@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-## Visual Studio Code 
-=======
+
 ## Travail Pratique 2-Git
->>>>>>> 3845a321fc37376e5b127402797e310e1b4f29da
+
 
  Ce dépôt contient le code d’un projet web fait dans le cours de Perspective Professionnelles.
  
