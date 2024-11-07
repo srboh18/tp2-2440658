@@ -1,3 +1,4 @@
-*.env
+tpweb1/
+*.env  
 nodes_modules/
 out/
