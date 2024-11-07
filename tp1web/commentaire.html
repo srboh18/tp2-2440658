@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ni - Commentaires</title>
+    <!-- Auteur : Sami Rboh 2024 -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header id="top">
+            <img src="images/ni-logo.jpg" alt="headerFlex">
+            <!-- Source :  https://developer.mozilla.org/fr/docs/Web/CSS/CSS_images/Using_CSS_gradients -->
+            <h1>Nihno</h1>
+        </header>
+        <nav>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="galerie-photo.html">Galerie Photo</a></li>
+                    <li><a href="commentaire.html">Commentaires</a></li>
+                </ul>
+                <p><a href="connexion.html" class="connexionAlignement">Connexion</a></p>
+            </div>
+        </nav>
+        <main class="centering">
+            <h2>Commentaires</h2>
+            <form method="post" action="mailto:samirboh18@gmail.com" enctype="text/plain">
+                <div class="form">
+
+                    <fieldset class="form-Part1">
+
+                        <h4 class="title-style">Identification :</h4>
+                        <div>
+                            <label for="txtPrenom">Prénom :</label>
+                            <input type="text" name="txtPrenom" id="txtPrenom" placeholder="ex: Sami" required
+                                class="form-alignement">
+                        </div>
+
+                        <div class="lastNameAlignement">
+                            <label for="txtNom">Nom :</label>
+                            <input type="text" name="txtNom" id="txtNom" placeholder="ex: Rboh" required
+                                class="form-alignement">
+                        </div>
+
+                        <div class="emailAlignement">
+                            <label for="txtEmail">Courriel :</label>
+                            <input type="email" name="txtEmail" id="txtEmail" placeholder="ex: exemple@hotmail.com"
+                                required class="form-alignement">
+                        </div>
+
+                        <div class="provinceAlignement">
+
+                            <label for="selectProvince">Province :</label>
+                            <select name="selectProvince" id="selectProvince" class="form-alignement">
+                                <option value="AB">Alberta</option>
+                                <option value="CB">Colombie-Britannique</option>
+                                <option value="ON">Ontario</option>
+                                <option value="QC" selected>Québec</option>
+
+                            </select>
+                        </div>
+
+                        <div class="bornDateAlignement">
+                            <label for="borndate">Date de naissance :</label>
+                            <input type="date" name="borndate" id="borndate" class="form-alignement">
+                        </div>
+                        <div class="commentAlignement">
+                            <label for="txt_commentaire" class="text-alignement"> Commentaire :</label>
+                            <textarea id="txt_commentaire" name="txt_commentaire" rows="7"
+                                placeholder="écrire un commentaire..." class="form-alignement"></textarea>
+                        </div>
+
+                    </fieldset>
+
+
+                    <fieldset class="form-Part2">
+
+                        <h4 class="title-style"> Votre/Vos album(s) préféré(s) :</h4>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="check_mils" id="check_mils">
+                                <label for="check_mils">MILS </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_commeprevu" id="check_commeprevu">
+                                <label for="check_commeprevu">Comme Prévu</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_mils2" id="check_mils2">
+                                <label for="check_mils2">MILS 2 </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_destin" id="check_destin">
+                                <label for="check_destin">Destin </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_mils3" id="check_mils3">
+                                <label for="check_mils3">MILS 3 </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_jefe" id="check_jefe">
+                                <label for="check_jefe">Jefe </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="check_ni" id="check_ni">
+                                <label for="check_ni">N.I. </label>
+                            </li>
+                        </ul>
+
+                        <h4 class="title-style">Votre évaluation du site :</h4>
+                        <ul>
+                            <li>
+                                <div>
+                                    <input type="radio" name="rb_rating" id="rb_excellent" checked>
+                                    <label for="rb_excellent">Excellent</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="radio" name="rb_rating" id="rb_tresbien">
+                                    <label for="rb_tresbien">Très Bien</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="radio" name="rb_rating" id="rb_moyen">
+                                    <label for="rb_excellent">Moyen</label>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="radio" name="rb_rating" id="rb_bof">
+                                    <label for="rb_bof">Bof</label>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <input type="submit" value="Envoyer les commentaires">
+                </div>
+
+
+
+            </form>
+        </main>
+        <footer class="normal-footer">
+
+            <p><a href="#top" class="footer-grid1">Retour en haut</a></p>
+            <p class="footer-grid2">Copyright 2021</p>
+            <p class="footer-grid3">420-W11-SF</p>
+            <p class="footer-grid4">Travail Pratique 1 </p>
+            <p class="footer-grid5">Sami Rboh</p>
+
+
+        </footer>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

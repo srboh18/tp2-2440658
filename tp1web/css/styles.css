@@ -1,0 +1,372 @@
+/* Classes */
+.page {
+
+    width: 1000px;
+    background: linear-gradient(to right, rgb(6, 148, 205), rgb(206, 195, 195));
+    /*Trouvé sur https://developer.mozilla.org/fr/docs/Web/CSS/CSS_images/Using_CSS_gradients   */
+    margin: 0 auto;
+    border: 20px;
+    border: solid;
+
+}
+
+.main-content {
+    display: flex;
+}
+
+.centering {
+    text-align: center;
+}
+
+.title-style {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.align-fieldset {
+    width: 100%;
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(6, 148, 205));
+    border: solid;
+    width: 600px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.form-Part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    margin-right: 10px;
+}
+
+.form-Part1 Select {
+    width: 125px;
+}
+
+.form-alignement {
+    width: 120px;
+}
+
+.form-Part2 {
+    margin-left: 20px;
+}
+
+.normal-footer {
+    border: solid;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+
+}
+
+.margin-fix {
+    margin: 10px;
+    margin-top: 25px;
+}
+
+
+.navigation {
+
+    display: flex;
+    justify-content: center;
+    border: solid;
+    border-bottom: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.mainField1 {
+    border: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    flex: 1;
+}
+
+.mainField2 {
+
+    border: solid;
+    border-right: 0;
+    border-top: 0;
+}
+
+.footer-grid1 {
+
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-grid2 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid3 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-grid4 {
+
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-grid5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.text-alignement {
+    vertical-align: 50px;
+}
+
+/* balises structurantes */
+
+body {
+    background-image: url("../images/background.jpg");
+    /*Source : youtube/Ninho */
+}
+
+header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+nav {
+
+    text-align: center;
+    border: 20px;
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+
+
+footer {
+    text-align: left;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+/* Header */
+
+header img {
+    margin: 20px;
+    border: solid;
+    border-radius: 5px;
+
+}
+
+header h1 {
+    width: 100px;
+
+}
+
+header>h1 {
+    align-self: center;
+}
+
+header>h4 {
+    align-self: center;
+}
+
+/* Nav */
+
+nav>p>a {
+    text-align: center;
+
+}
+
+
+
+nav>div>ul {
+    margin: 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 0px;
+}
+
+nav p {
+    border: solid;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    margin: 0px;
+
+}
+
+nav p a {
+    text-decoration: underline;
+    color: blueviolet;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+nav p a:hover {
+    background-color: white;
+
+}
+
+nav p a:active {
+    background: linear-gradient(to right, rgb(48, 4, 69), rgb(227, 241, 246));
+
+}
+
+nav ul a {
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(34, 0, 119);
+}
+
+nav ul a:hover {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(76, 23, 209);
+}
+
+nav ul a:active {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(206, 195, 195), rgb(9, 123, 169));
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+nav>div>p {
+    padding: 0;
+    vertical-align: center;
+
+}
+
+/* Main */
+
+main a:hover {
+    opacity: 25%;
+}
+
+main table {
+
+    margin-right: 25px;
+
+}
+
+main td {
+    margin-bottom: 8px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+tr>th {
+    margin-bottom: 10px;
+}
+
+main td {
+    font-weight: bold;
+    font-weight: 550;
+}
+
+main td:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+main img {
+    display: flex;
+    display: inline-block;
+
+}
+
+
+main h2 {
+    text-decoration: underline;
+}
+
+
+
+fieldset {
+    border: none;
+
+}
+
+
+/* Footer */
+
+
+/* Form */
+form ul {
+    list-style-type: none;
+
+}
+
+form li {
+    text-align: left;
+}
+
+form label {
+    text-align: left;
+    display: inline-block;
+}
+
+fieldset>div>label {
+
+
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+form h2 {
+    text-align: center;
+}
